@@ -28,7 +28,7 @@ bot.on("ready", async () => {
 
 bot.on('message', message => {
   if (message.author.bot) return;
-    // if(message.channel.type === "dm") return;
+    if(message.channel.type === "dm") return;
 
     let prefix = 'r!';
     let messageArray = message.content.split(" ");
@@ -74,7 +74,6 @@ bot.on('message', message => {
         message.delete();
         mentionMessage = message.content.slice(6);
         mention.send (mentionMessage);
-        // return message.channel.send ("Message sent.");
       }
 
    if(msg.startsWith (prefix + "quote")) {
@@ -94,13 +93,6 @@ bot.on('message', message => {
        case 11: message.channel.send ("On our days off, I go out for drives with Gaku. Tenn doesn't go out much, so we watch DVDs together!"); break;
        case 12: message.channel.send ("Since I'm always rabbit chatting with you I never feel like we're apart, but we barely meet in real life. I'd really like to see you too!"); break;
        case 13: message.channel.send ("I thought about this a lot and I think what I like about myself the most is that I'm a part of TRIGGER. \nI used to think of it as a burden sometimes, but now it's my favorite thing about myself."); break;
-       // case 14: message.channel.send (""); break;
-       // case 15: message.channel.send (""); break;
-       // case 16: message.channel.send (""); break;
-       // case 17: message.channel.send (""); break;
-       // case 18: message.channel.send (""); break;
-       // case 19: message.channel.send (""); break;
-       // case 20: message.channel.send (""); break;
     }
   }
 
@@ -138,11 +130,6 @@ bot.on('message', message => {
   if(cmd === `${prefix}mafia` || cmd === `${prefix}maf`){
     return message.channel.send("maf maf");
   }
-
-  if(cmd === `${prefix}ryo`){
-    return message.channel.send("Oh fuck. Bastard spotted.");
-  }
-
 });
 
 bot.login(process.env.token);

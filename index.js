@@ -105,7 +105,7 @@ bot.on('message', message => {
     .setDescription("Do not include < > when using commands. \nCommand phrases are not caps sensitive")
     .setColor("#213e59")
     .addField("Commands:","**r!yuu** *<question>* | Ask him anything. \n**r!send** *<@user> <message>* | Send a DM to the mentioned user\n**r!scout** | Solo Yolo \n**r!quote** | Random quote\n**r!say** *<message>* | Have the bot say anything you want\n**r!help** | Displays this help message")
-    .addField("Basic r!commands:", "mafia (alias:maf) || rank")
+    .addField("Basic r!commands:", "mafia (alias:maf) || rank || cat ")
     .addField("Command phrases:", "Good morning Ryuu");
     message.channel.send(helpembed);
   }
@@ -121,6 +121,10 @@ bot.on('message', message => {
   return message. channel.send(botembed);
   }
 
+   if(cmd === `${prefix}cat`){
+    botschannel.send ({files:["./images/nya.png"]});
+  }
+  
   if(cmd === `${prefix}say`){
     let botmessage = args.join(" ");
     message.delete().catch();

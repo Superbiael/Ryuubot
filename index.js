@@ -43,9 +43,6 @@ bot.on('message', message => {
      msg = message.content.toLowerCase();
      mention = message.mentions.users.first();
 
-     if(msg.startsWith (prefix + "scout")) {
-       return message.channel.send("This command isn't finished yet.");
-     }
 
    if(msg.startsWith (prefix + "rank")) {
        number = 5;
@@ -59,18 +56,14 @@ bot.on('message', message => {
       }
     }
 
-    // if(msg.startsWith (prefix + "scout")) {
-    //     number = 38;
-    //     var random = Math.floor (Math.random() * (number)) + 1;
-    //     switch (random) {
-    //       // case 1: message.channel.send (""); break;
-    //       // case 2: message.channel.send (""); break;
-    //       // case 3: message.channel.send (""); break;
-    //       // case 4: message.channel.send (""); break;
-    //       // case 5: message.channel.send (""); break;
-    //       // case 6: message.channel.send (""); break;
-    //     }
-    //   }
+    if(msg.startsWith (prefix + "scout")) {
+        number = 1;
+        var random = Math.floor (Math.random() * (number)) + 1;
+        switch (random) {
+          case 1: botschannel.send ({files:["./images/ryuu_visualartexpo_ssr.png"]});
+
+        }
+      }
 
   if (msg.startsWith (prefix + "send")) {
        if (mention == null) { return; }

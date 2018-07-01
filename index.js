@@ -60,8 +60,7 @@ bot.on('message', message => {
         number = 1;
         var random = Math.floor (Math.random() * (number)) + 1;
         switch (random) {
-          case 1: botschannel.send ({files:["./images/ryuu_visualartexpo_ssr.png"]});
-
+          case 1: botschannel.send ({files:["./images/ryuu_visualartexpo_ssr.png"]}); break;
         }
       }
 
@@ -96,13 +95,17 @@ bot.on('message', message => {
     return message.channel.send("Good morning! Every time I wake up, my hair is always a mess. It's so troublesome...");
   }
 
+  if (msg.startsWith ("good night ryuu")) {
+    return message.channel.send ("Good night! Get lots of sleep tonight so I can see you tomorrow too.");
+  }
+  
   if(cmd ===`${prefix}help`){
     let helpembed = new Discord.RichEmbed()
     .setDescription("Do not include < > when using commands. \nCommand phrases are not caps sensitive")
     .setColor("#213e59")
     .addField("Commands:","**r!yuu** *<question>* | Ask him anything. \n**r!send** *<@user> <message>* | Send a DM to the mentioned user\n**r!scout** | Solo Yolo \n**r!quote** | Random quote\n**r!say** *<message>* | Have the bot say anything you want\n**r!help** | Displays this help message")
     .addField("Basic r!commands:", "mafia (alias:maf) || rank || cat ")
-    .addField("Command phrases:", "Good morning Ryuu");
+    .addField("Command phrases:", "Good morning Ryuu || Good night Ryuu");
     message.channel.send(helpembed);
   }
 

@@ -116,6 +116,7 @@ bot.on('message', message => {
     .setColor("#213e59")
     .setThumbnail(bicon)
     .addField("Name:", bot.user.username)
+    .addField("# of quotes", "13")
     .addField("Twitter:", "https://twitter.com/Superbiael");
   return message. channel.send(botembed);
   }

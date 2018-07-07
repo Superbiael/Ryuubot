@@ -79,7 +79,7 @@ bot.on('message', message => {
        case 2: message.channel.send ("Hm? Did you want you touch me some more? \nHaha, should I pet you too?"); break;
        case 3: message.channel.send ("I'd be really happy if you cheered me on!"); break;
        case 4: message.channel.send ("You're so nice. I'll give you a reward for how hard you've worked this year. Just you wait!"); break;
-       case 5: message.channel.send ("I think th ereason why everyone likes you is because you're such a cheerful and cute person."); break;
+       case 5: message.channel.send ("I think the reason why everyone likes you is because you're such a cheerful and cute person."); break;
        case 6: message.channel.send ("You got the wrong person, I'm not as handsome as him."); break;
        case 7: message.channel.send ("Because of all of you, I've been able to keep going even when I've felt like throwing in the towel. Thank you for the unbelieveable amount of courage and strength you've given me."); break;
        case 8: message.channel.send ("Gaku and Tenn seem excited about this, so I need to do my best too!"); break;

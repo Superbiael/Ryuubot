@@ -132,7 +132,7 @@ bot.on('message', message => {
       }
 
    if(msg.startsWith (prefix + "quote")) {
-     number = 13;
+     number = 14;
      var random = Math.floor (Math.random() * (number)) + 1;
      switch (random) {
        case 1: message.channel.send ("Tenn and Gaku are always fighting."); break;
@@ -148,6 +148,7 @@ bot.on('message', message => {
        case 11: message.channel.send ("On our days off, I go out for drives with Gaku. Tenn doesn't go out much, so we watch DVDs together!"); break;
        case 12: message.channel.send ("Since I'm always rabbit chatting with you I never feel like we're apart, but we barely meet in real life. I'd really like to see you too!"); break;
        case 13: message.channel.send ("I thought about this a lot and I think what I like about myself the most is that I'm a part of TRIGGER. \nI used to think of it as a burden sometimes, but now it's my favorite thing about myself."); break;
+       case 14: message.channel.send ("I encountered a light so bright that it was burned into my memory. Let's tie those lights together, and spread them to the ends of the world so that we won't lose sight of each other even in a storm."); break;
     }
   }
 
@@ -163,7 +164,7 @@ bot.on('message', message => {
     let helpembed = new Discord.RichEmbed()
     .setDescription("Do not include < > when using commands. \nCommand phrases are not caps sensitive")
     .setColor("#213e59")
-    .addField("Commands:","**r!yuu** *<question>* | Ask him anything. \n**r!send** *<@user> <message>* | Send a DM to the mentioned user\n**r!scout** | Solo Yolo \n**r!quote** | Random quote\n**r!say** *<message>* | Have the bot say anything you want\n**r!help** | Displays this help message")
+    .addField("Commands:","**r!yuu** *<question>* | Ask him anything. \n**r!send** *<@user> <message>* | Send a DM to the mentioned user\n**r!scout** | Solo Yolo \n**r!quote** | Random quote\n**r!say** *<message>* | Have the bot say anything you want\n**r!help** | Displays this help message \n**r!botinfo**")
     .addField("Basic r!commands:", "mafia (alias:maf) || rank || cat ")
     .addField("Command phrases:", "Good morning Ryuu || Good night Ryuu");
     message.channel.send(helpembed);
@@ -175,7 +176,7 @@ bot.on('message', message => {
     .setDescription("Bot Information")
     .setColor("#213e59")
     .setThumbnail(bicon)
-    .addField("# of quotes:", "13")
+    .addField("# of quotes:", "14")
     .addField("Scout:", "61")
   return message.channel.send(botembed);
   }

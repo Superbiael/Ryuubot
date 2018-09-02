@@ -38,7 +38,7 @@ bot.on('message', message => {
     if(commandfile) commandfile.run(bot,message,args);
 
      let botschannel = message.guild.channels.find(`name`, "idolbot7");
-     if(!botschannel) return message.channel.send("Couldn't find bot channel.");
+     if(!botschannel) return 
   
      msg = message.content.toLowerCase();
      mention = message.mentions.users.first();

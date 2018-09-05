@@ -56,73 +56,11 @@ bot.on('message', message => {
       }
     }
 
-      if(msg.startsWith (prefix + "scout")) {
-          number = 61;
-          var random = Math.floor (Math.random() * (number)) + 1;
-          switch (random) {
-            case 1: botschannel.send ({files:["./images/ryuu_birthday_sr.png"]}); break;
-            case 2: botschannel.send ({files:["./images/ryuu_birthday_ssr.png"]}); break;
-            case 3: botschannel.send ({files:["./images/ryuu_blackside_ssr.png"]}); break;
-            case 4: botschannel.send ({files:["./images/ryuu_bno_ssr.png"]}); break;
-            case 5: botschannel.send ({files:["./images/ryuu_christmas_ssr.png"]}); break;
-            case 6: botschannel.send ({files:["./images/ryuu_daybreak_ssr.png"]}); break;
-            case 7: botschannel.send ({files:["./images/ryuu_diafus_ssr.png"]}); break;
-            case 8: botschannel.send ({files:["./images/ryuu_endofyear_sr.png"]}); break;
-            case 9: botschannel.send ({files:["./images/ryuu_endofyear_ssr.png"]}); break;
-            case 10: botschannel.send ({files:["./images/ryuu_gardentea_ssr.png"]}); break;
-            case 11: botschannel.send ({files:["./images/ryuu_gothichalloween_ssr.png"]}); break;
-            case 12: botschannel.send ({files:["./images/ryuu_greatescape_ssr.png"]}); break;
-            case 13: botschannel.send ({files:["./images/ryuu_heaventlyvisitor_ur.png"]}); break;
-            case 14: botschannel.send ({files:["./images/ryuu_kindpudding_ssr.png"]}); break;
-            case 15: botschannel.send ({files:["./images/ryuu_lasdim_ssr.png"]}); break;
-            case 16: botschannel.send ({files:["./images/ryuu_leopa_sr.png"]}); break;
-            case 17: botschannel.send ({files:["./images/ryuu_leopa_ssr.png"]}); break;
-            case 18: botschannel.send ({files:["./images/ryuu_linked_ssr.png"]}); break;
-            case 19: botschannel.send ({files:["./images/ryuu_lovegame_ssr.png"]}); break;
-            case 20: botschannel.send ({files:["./images/ryuu_marchendream_ssr.png"]}); break;
-            case 21: botschannel.send ({files:["./images/ryuu_mlullaby_ssr.png"]}); break;
-            case 22: botschannel.send ({files:["./images/ryuu_monster_sr.png"]}); break;
-            case 23: botschannel.send ({files:["./images/ryuu_monster_ssr.png"]}); break;
-            case 24: botschannel.send ({files:["./images/ryuu_newyear_ssr.png"]}); break;
-            case 25: botschannel.send ({files:["./images/ryuu_order_ssr.png"]}); break;
-            case 26: botschannel.send ({files:["./images/ryuu_ordinarydays_r.png"]}); break;
-            case 27: botschannel.send ({files:["./images/ryuu_ordinarydays_sr.png"]}); break;
-            case 28: botschannel.send ({files:["./images/ryuu_ordinarydays_ssr.png"]}); break;
-            case 29: botschannel.send ({files:["./images/ryuu_outdoor_sr.png"]}); break;
-            case 30: botschannel.send ({files:["./images/ryuu_outdoor_ssr.png"]}); break;
-            case 31: botschannel.send ({files:["./images/ryuu_outdoor_ur.png"]}); break;
-            case 32: botschannel.send ({files:["./images/ryuu_rabbitparka_sr.png"]}); break;
-            case 33: botschannel.send ({files:["./images/ryuu_rabbitparka_ssr.png"]}); break;
-            case 34: botschannel.send ({files:["./images/ryuu_rehearsal_r.png"]}); break;
-            case 35: botschannel.send ({files:["./images/ryuu_rehearsal_sr.png"]}); break;
-            case 36: botschannel.send ({files:["./images/ryuu_rehearsal_ssr.png"]}); break;
-            case 37: botschannel.send ({files:["./images/ryuu_rehearsal_ur.png"]}); break;
-            case 38: botschannel.send ({files:["./images/ryuu_rti_ssr.png"]}); break;
-            case 39: botschannel.send ({files:["./images/ryuu_sparkle_ssr.png"]}); break;
-            case 40: botschannel.send ({files:["./images/ryuu_sweets_ssr.png"]}); break;
-            case 41: botschannel.send ({files:["./images/ryuu_taisho_ssr.png"]}); break;
-            case 42: botschannel.send ({files:["./images/ryuu_triggeracadamy_r.png"]}); break;
-            case 43: botschannel.send ({files:["./images/ryuu_triggeracadamy_sr.png"]}); break;
-            case 44: botschannel.send ({files:["./images/ryuu_triggeracadamy_ssr.png"]}); break;
-            case 45: botschannel.send ({files:["./images/ryuu_triggerpolice_r.png"]}); break;
-            case 46: botschannel.send ({files:["./images/ryuu_triggerpolice_sr.png"]}); break;
-            case 47: botschannel.send ({files:["./images/ryuu_triggerpolice_ssr.png"]}); break;
-            case 48: botschannel.send ({files:["./images/ryuu_valentine_ssr.png"]}); break;
-            case 49: botschannel.send ({files:["./images/ryuu_visualartexpo_ssr.png"]}); break;
-            case 50: botschannel.send ({files:["./images/ryuu_whiteday_ssr.png"]}); break;
-            case 51: botschannel.send ({files:["./images/ryuu_whitedaysp_sr.png"]}); break;
-            case 52: botschannel.send ({files:["./images/ryuu_whitedaysp_ssr.png"]}); break;
-            case 53: botschannel.send ({files:["./images/ryuu_winterwonderland_sr.png"]}); break;
-            case 54: botschannel.send ({files:["./images/ryuu_winterwonderland_ssr.png"]}); break;
-            case 55: botschannel.send ({files:["./images/ryuu_work_sr.png"]}); break;
-            case 56: botschannel.send ({files:["./images/ryuu_work_ssr.png"]}); break;
-            case 57: botschannel.send ({files:["./images/ryuu_wishes_sr.png"]}); break;
-            case 58: botschannel.send ({files:["./images/ryuu_wishes_ssr.png"]}); break;
-            case 59: botschannel.send ({files:["./images/ryuu_xmasmagic_ssr.png"]}); break;
-            case 60: botschannel.send ({files:["./images/ryuu_xmaxrock_ssr.png"]}); break;
-            case 61: botschannel.send ({files:["./images/ryuu_zodiac_ssr.png"]}); break;
-          }
-        }
+      if (msg.startsWith (prefix + "scout")) {
+        number = 61;
+        imageNumber = Math.floor (Math.random() * (number)) + 1;
+        botschannel.send ({files: ["./scout/" + imageNumber + ".png"]})
+      }
 
   if (msg.startsWith (prefix + "send")) {
        if (mention == null) { return; }

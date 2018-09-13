@@ -37,8 +37,8 @@ bot.on('message', message => {
     let commandfile = bot.commands.get(cmd.slice(prefix.length));
     if(commandfile) commandfile.run(bot,message,args);
 
-     let botschannel = message.guild.channels.find(`name`, "idolbot7");
-     if(!botschannel) return;
+   let botschannel = message.guild.channels.find(`name`, "bot-channel");
+   if(!botschannel) return;
   
      msg = message.content.toLowerCase();
      mention = message.mentions.users.first();

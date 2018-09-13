@@ -48,11 +48,11 @@ bot.on('message', message => {
        number = 5;
        var random = Math.floor (Math.random() * (number)) + 1;
        switch (random) {
-         case 1: message.channel.send ("It's all thanks to you! Thank you!"); break;
-         case 2: message.channel.send ("Even I can do it if I try!"); break;
-         case 3: message.channel.send ("I wonder if our appeal was conveyed to you."); break;
-         case 4: message.channel.send ("I can still go on!"); break;
-         case 5: message.channel.send ("Shall we practice together?"); break;
+         case 1: botschannel.send ("It's all thanks to you! Thank you!"); break;
+         case 2: botschannel.send ("Even I can do it if I try!"); break;
+         case 3: botschannel.send ("I wonder if our appeal was conveyed to you."); break;
+         case 4: botschannel.send ("I can still go on!"); break;
+         case 5: botschannel.send ("Shall we practice together?"); break;
       }
     }
 
@@ -73,29 +73,29 @@ bot.on('message', message => {
      number = 14;
      var random = Math.floor (Math.random() * (number)) + 1;
      switch (random) {
-       case 1: message.channel.send ("Tenn and Gaku are always fighting."); break;
-       case 2: message.channel.send ("Hm? Did you want you touch me some more? \nHaha, should I pet you too?"); break;
-       case 3: message.channel.send ("I'd be really happy if you cheered me on!"); break;
-       case 4: message.channel.send ("You're so nice. I'll give you a reward for how hard you've worked this year. Just you wait!"); break;
-       case 5: message.channel.send ("I think the reason why everyone likes you is because you're such a cheerful and cute person."); break;
-       case 6: message.channel.send ("You got the wrong person, I'm not as handsome as him."); break;
-       case 7: message.channel.send ("Because of all of you, I've been able to keep going even when I've felt like throwing in the towel. Thank you for the unbelieveable amount of courage and strength you've given me."); break;
-       case 8: message.channel.send ("Gaku and Tenn seem excited about this, so I need to do my best too!"); break;
-       case 9: message.channel.send ("I want to take this chance to get to know Sougo-kun better."); break;
-       case 10: message.channel.send ("I really like MEZZO\"'s songs. I listened to \"Shards of Love\" too! Those two can create such perfect harmonies that you'd like they were born as one."); break;
-       case 11: message.channel.send ("On our days off, I go out for drives with Gaku. Tenn doesn't go out much, so we watch DVDs together!"); break;
-       case 12: message.channel.send ("Since I'm always rabbit chatting with you I never feel like we're apart, but we barely meet in real life. I'd really like to see you too!"); break;
-       case 13: message.channel.send ("I thought about this a lot and I think what I like about myself the most is that I'm a part of TRIGGER. \nI used to think of it as a burden sometimes, but now it's my favorite thing about myself."); break;
-       case 14: message.channel.send ("I encountered a light so bright that it was burned into my memory. Let's tie those lights together, and spread them to the ends of the world so that we won't lose sight of each other even in a storm."); break;
+       case 1: botschannel.send ("Tenn and Gaku are always fighting."); break;
+       case 2: botschannel.send ("Hm? Did you want you touch me some more? \nHaha, should I pet you too?"); break;
+       case 3: botschannel.send ("I'd be really happy if you cheered me on!"); break;
+       case 4: botschannel.send ("You're so nice. I'll give you a reward for how hard you've worked this year. Just you wait!"); break;
+       case 5: botschannel.send ("I think the reason why everyone likes you is because you're such a cheerful and cute person."); break;
+       case 6: botschannel.send ("You got the wrong person, I'm not as handsome as him."); break;
+       case 7: botschannel.send ("Because of all of you, I've been able to keep going even when I've felt like throwing in the towel. Thank you for the unbelieveable amount of courage and strength you've given me."); break;
+       case 8: botschannel.send ("Gaku and Tenn seem excited about this, so I need to do my best too!"); break;
+       case 9: botschannel.send ("I want to take this chance to get to know Sougo-kun better."); break;
+       case 10: botschannel.send ("I really like MEZZO\"'s songs. I listened to \"Shards of Love\" too! Those two can create such perfect harmonies that you'd like they were born as one."); break;
+       case 11: botschannel.send ("On our days off, I go out for drives with Gaku. Tenn doesn't go out much, so we watch DVDs together!"); break;
+       case 12: botschannel.send ("Since I'm always rabbit chatting with you I never feel like we're apart, but we barely meet in real life. I'd really like to see you too!"); break;
+       case 13: botschannel.send ("I thought about this a lot and I think what I like about myself the most is that I'm a part of TRIGGER. \nI used to think of it as a burden sometimes, but now it's my favorite thing about myself."); break;
+       case 14: botschannel.send ("I encountered a light so bright that it was burned into my memory. Let's tie those lights together, and spread them to the ends of the world so that we won't lose sight of each other even in a storm."); break;
     }
   }
 
   if (msg.startsWith ("good morning ryuu")) {
-    return message.channel.send("Good morning! Every time I wake up, my hair is always a mess. It's so troublesome...");
+    return botschannel.send("Good morning! Every time I wake up, my hair is always a mess. It's so troublesome...");
   }
 
   if (msg.startsWith ("good night ryuu")) {
-    return message.channel.send ("Good night! Get lots of sleep tonight so I can see you tomorrow too.");
+    return botschannel.send ("Good night! Get lots of sleep tonight so I can see you tomorrow too.");
   }
   
   if(cmd ===`${prefix}help`){
@@ -105,7 +105,7 @@ bot.on('message', message => {
     .addField("Commands:","**r!yuu** *<question>* | Ask him anything. \n**r!send** *<@user> <message>* | Send a DM to the mentioned user\n**r!scout** | Solo Yolo \n**r!quote** | Random quote\n**r!say** *<message>* | Have the bot say anything you want\n**r!help** | Displays this help message \n**r!botinfo**")
     .addField("Basic r!commands:", "mafia (alias:maf) || rank || cat ")
     .addField("Command phrases:", "Good morning Ryuu || Good night Ryuu");
-    message.channel.send(helpembed);
+    botschannel.send(helpembed);
   }
   
   if(cmd ===`${prefix}botinfo`){
@@ -116,7 +116,7 @@ bot.on('message', message => {
     .setThumbnail(bicon)
     .addField("# of quotes:", "14")
     .addField("Scout:", "61")
-  return message.channel.send(botembed);
+  return botschannel.send(botembed);
   }
 
    if(cmd === `${prefix}cat`){
@@ -126,11 +126,11 @@ bot.on('message', message => {
   if(cmd === `${prefix}say`){
     let botmessage = args.join(" ");
     message.delete().catch();
-    message.channel.send(botmessage);
+    botschannel.send(botmessage);
   }
 
   if(cmd === `${prefix}mafia` || cmd === `${prefix}maf`){
-    return message.channel.send("maf maf");
+    return botschannel.send("maf maf");
   }
 });
 

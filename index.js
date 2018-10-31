@@ -57,7 +57,7 @@ bot.on('message', message => {
     }
 
       if (msg.startsWith (prefix + "scout")) {
-        number = 64;
+        number = 66;
         imageNumber = Math.floor (Math.random() * (number)) + 1;
         botschannel.send ({files: ["./scout/" + imageNumber + ".png"]})
       }
@@ -115,18 +115,18 @@ bot.on('message', message => {
     .setColor("#213e59")
     .setThumbnail(bicon)
     .addField("# of quotes:", "14")
-    .addField("Scout:", "64")
+    .addField("Scout:", "66")
   return botschannel.send(botembed);
   }
 
    if(cmd === `${prefix}cat`){
-    botschannel.send ({files:["./images/nya.png"]});
+    return botschannel.send ({files:["./images/nya.png"]});
   }
   
   if(cmd === `${prefix}say`){
     let botmessage = args.join(" ");
     message.delete().catch();
-    botschannel.send(botmessage);
+    return botschannel.send(botmessage);
   }
 
   if(cmd === `${prefix}mafia` || cmd === `${prefix}maf`){

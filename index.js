@@ -43,21 +43,8 @@ bot.on('message', message => {
      msg = message.content.toLowerCase();
      mention = message.mentions.users.first();
 
-
-   if(msg.startsWith (prefix + "rank")) {
-       number = 5;
-       var random = Math.floor (Math.random() * (number)) + 1;
-       switch (random) {
-         case 1: botschannel.send ("It's all thanks to you! Thank you!"); break;
-         case 2: botschannel.send ("Even I can do it if I try!"); break;
-         case 3: botschannel.send ("I wonder if our appeal was conveyed to you."); break;
-         case 4: botschannel.send ("I can still go on!"); break;
-         case 5: botschannel.send ("Shall we practice together?"); break;
-      }
-    }
-
       if (msg.startsWith (prefix + "scout")) {
-        number = 67;
+        number = 68;
         imageNumber = Math.floor (Math.random() * (number)) + 1;
         botschannel.send ({files: ["./scout/" + imageNumber + ".png"]})
       }
@@ -103,20 +90,9 @@ bot.on('message', message => {
     .setDescription("Do not include < > when using commands. \nCommand phrases are not caps sensitive")
     .setColor("#213e59")
     .addField("Commands:","**r!yuu** *<question>* | Ask him anything. \n**r!send** *<@user> <message>* | Send a DM to the mentioned user\n**r!scout** | Solo Yolo \n**r!quote** | Random quote\n**r!say** *<message>* | Have the bot say anything you want\n**r!help** | Displays this help message \n**r!botinfo**")
-    .addField("Basic r!commands:", "mafia (alias:maf) || rank || cat ")
+    .addField("Basic r!commands:", "mafia (alias:maf) || cat ")
     .addField("Command phrases:", "Good morning Ryuu || Good night Ryuu");
     botschannel.send(helpembed);
-  }
-  
-  if(cmd ===`${prefix}botinfo`){
-  let bicon = bot.user.displayAvatarURL;
-  let botembed = new Discord.RichEmbed()
-    .setDescription("Bot Information")
-    .setColor("#213e59")
-    .setThumbnail(bicon)
-    .addField("# of quotes:", "14")
-    .addField("Scout:", "66")
-  return botschannel.send(botembed);
   }
 
    if(cmd === `${prefix}cat`){

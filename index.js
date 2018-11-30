@@ -44,7 +44,7 @@ bot.on('message', message => {
      mention = message.mentions.users.first();
 
       if (msg.startsWith (prefix + "scout")) {
-        number = 68;
+        number = 69;
         imageNumber = Math.floor (Math.random() * (number)) + 1;
         botschannel.send ({files: ["./scout/" + imageNumber + ".png"]})
       }

@@ -43,15 +43,15 @@ bot.on('message', message => {
      msg = message.content.toLowerCase();
      mention = message.mentions.users.first();
 
-//       if (msg.startsWith (prefix + "scout")) {
-//         number = 72;
-//         imageNumber = Math.floor (Math.random() * (number)) + 1;
-//         botschannel.send ({files: ["./scout/" + imageNumber + ".png"]})
-//       }
+      if (msg.startsWith (prefix + "scout")) {
+        number = 73;
+        imageNumber = Math.floor (Math.random() * (number)) + 1;
+        botschannel.send ({files: ["./scout/" + imageNumber + ".png"]})
+      }
   
-     if (msg.startsWith (prefix + "scout")) {
-    return botschannel.send ({files:["./scout/72.png"]});
-  }
+//      if (msg.startsWith (prefix + "scout")) {
+//     return botschannel.send ({files:["./scout/72.png"]});
+//   }
 
   if (msg.startsWith (prefix + "send")) {
        if (mention == null) { return; }
